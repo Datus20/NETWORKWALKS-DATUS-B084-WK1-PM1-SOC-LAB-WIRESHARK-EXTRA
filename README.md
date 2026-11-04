@@ -53,9 +53,15 @@ The main objectives of this SOC Labs project are to:
 ⨳The Lab Network topology was provides as per below diagram of the SOC LAB with Webserver (_IP 192.168.10.20_), SOC Analyst (_IP 192.168.10.10_), **Staff PC (_IP Unknown_)** , Network switch  and other host which all are connected to the Switch thru Wired (_Ethernet_)/ Wireless(_Wi-fi_).
 <img width="1251" height="673" alt="4 SOC LAB Follow TCP Stream I" src="https://github.com/user-attachments/assets/aca22eaa-dc17-4e5d-9f63-65aa2dcfcea4" />
 
+
+
+
 ⨳By Following The TCP Stream on the Network packets collected using Wireshark the Staff PC's IP **_(192.168.10.45)_** was identified which was communicating thru the Server **(192.168.10.20)** Staff Chat App services TCP port **5000**.
 
 <img width="1360" height="772" alt="4 SOC LAB Follow TCP Stream II" src="https://github.com/user-attachments/assets/e1b9470a-1fb6-426a-b592-8b43f8a2702b" />
+
+
+
 
 
 ⨳After analysis of the network packets collected using Wireshark thru TCP stream (_tcp.stream eq 5_) the hidden data was revealed/discoverd as shown on screenshot below,
@@ -70,8 +76,14 @@ The main objectives of this SOC Labs project are to:
 ⨳(_Topology Diagram_) 
 <img width="1247" height="675" alt="5 SOC LAB Follow TCP Stream 2 I" src="https://github.com/user-attachments/assets/a8722d06-3029-4faf-bc5b-d9c40703f26c" />
 
+
+
+
 ⨳ Capturing TCP stream (_tcp.stream eq 7_)
 <img width="1358" height="782" alt="5 SOC LAB Follow TCP Stream 2 II" src="https://github.com/user-attachments/assets/ce9416e2-53c3-43a7-b545-6e9eaf76ca5a" />
+
+
+
 
 ⨳ Hidden Data
 <img width="1357" height="779" alt="5 SOC LAB Follow TCP Stream 2 III" src="https://github.com/user-attachments/assets/1c7c2b09-c171-4157-b9f0-6f4972d7db3f" />
@@ -85,6 +97,9 @@ Checking and identifying unsecure Network protocols that show  username and pass
 which shown during or when a User on **Staff PC(_192.168.10.45_)** is login to the **Portal Server (_192.168.10.20_)**.
 <img width="1249" height="681" alt="6 SOC LAB HTTP plain text credentials I" src="https://github.com/user-attachments/assets/16f17ac5-0b94-44e1-b74b-a35d0cd1edff" />
 
+
+
+
 ⨳After Analyzing the packets captured from the Wireshark through the HTTP Protocol the User from the **Staff PC(_192.168.10.45_)** credentials was discover to be sent to the **Portal server (_192.168.10.20_)**  through **_port 80_** in cleat text as displayed below,
 <img width="1363" height="780" alt="6 SOC LAB HTTP plain text credentials II" src="https://github.com/user-attachments/assets/2356538c-18ec-4e12-bbfa-565c06cc12b0" />
 
@@ -96,14 +111,28 @@ which shown during or when a User on **Staff PC(_192.168.10.45_)** is login to t
 ⨳To identifying and catching the **Attacker(_IP Unknown_)** who is try to make a way to the **FTP server (_192.168.10.20_)** **port 21** by try different combination of username and passwords by sending multiple login request trying to access stored resources on the server.
 <img width="1248" height="685" alt="7 SOC LAB Catch the Bruteforce Attacker I" src="https://github.com/user-attachments/assets/089b9221-2d26-4435-ada1-74838b82088e" />
 
+
+
+
 ⨳ After the analysis of the packet collected by Wireshark The Attacker's IP **(_192.168.10.66_)** was identified  because it was sending too many  FTP login request on within a short period of time on FTP server **(_192.168.10.20_)** thru **_port 21_** try to guess the  username and password  as per below screenshot,
 <img width="1361" height="779" alt="7 SOC LAB Catch the Bruteforce Attacker II" src="https://github.com/user-attachments/assets/91f40313-3fc1-4380-94e5-3d8b5b1b8dfb" />
+
+
+
+
 
 ⨳(_tcp.stream eq 6_)
 <img width="1364" height="725" alt="7 SOC LAB Catch the Bruteforce Attacker III" src="https://github.com/user-attachments/assets/2431e457-ebc3-4a1f-a106-6c69e85cc27f" />
 
+
+
+
+
 ⨳After many guess or attempt the Attacker was successfully login on the FTP server with the suer name and password shown,
 <img width="1366" height="784" alt="7 SOC LAB Catch the Bruteforce Attacker IV" src="https://github.com/user-attachments/assets/6737b7b5-6523-4e17-b4c3-954538627da0" />
+
+
+
 
 ⨳(_tcp.stream eq 13_)
 <img width="1365" height="781" alt="7 SOC LAB Catch the Bruteforce Attacker V" src="https://github.com/user-attachments/assets/c8cff474-4886-4e7d-8750-a16edc93237d" />
@@ -117,14 +146,27 @@ To investigate ,capture traffic the call and identifying the scammer who was on 
 the below is the topology
 <img width="1253" height="676" alt="8 SOC LAB VOIP Call I" src="https://github.com/user-attachments/assets/3aee6697-d259-4c47-a686-b8b144144b2b" />
 
+
+
+
+
 ⨳ After capturing the packets during the analysis **Session initiation Protocol (SIP)** packet was captured and the Scammer **IP (_192.168.10.52_)** was discovered and captured.
 <img width="1360" height="781" alt="8 SOC LAB VOIP Call II" src="https://github.com/user-attachments/assets/ea504ede-a247-4aff-a865-c099d63981ff" />
+
+
+
 
 ⨳Then the establishment of **Real-time Transport Protocol (RTP)** between user and scammer stream was captured for playback.
 <img width="1358" height="774" alt="8 SOC LAB VOIP Call III" src="https://github.com/user-attachments/assets/11cbf9c7-0007-4088-8cef-75e1815ccce0" />
 
+
+
+
 ⨳VoIP Call ready for Play Stream,
 <img width="1364" height="780" alt="8 SOC LAB VOIP Call IV" src="https://github.com/user-attachments/assets/38c30e8e-64ac-44d7-8b51-5cd7999c9a83" />
+
+
+
 
 ⨳The playback stream was Played thru **RTP Player** on Wireshark and audio conversation was heard. as below where scammer IP (_192.168.10.25_) and User IP phone (_192.168.10.45_).
 <img width="1359" height="781" alt="8 SOC LAB VOIP Call V" src="https://github.com/user-attachments/assets/150fd883-df28-44b3-9b2a-c6c331d0ebdd" />
