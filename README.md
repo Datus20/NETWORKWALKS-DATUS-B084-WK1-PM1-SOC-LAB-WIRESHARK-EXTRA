@@ -68,7 +68,8 @@ The main objectives of this SOC Labs project are to:
 <img width="1357" height="779" alt="5 SOC LAB Follow TCP Stream 2 III" src="https://github.com/user-attachments/assets/1c7c2b09-c171-4157-b9f0-6f4972d7db3f" />
 
 ## 🪪To check & identify the unsecure Network protocols (HTTP)🔑
-Checking and identifying unsecure Network protocols that show  username and password in clear text (_HTTP_) **port 80** while Staff PC(_192.168.10.45_) is login to the Portal Server (_192.168.10.20_).
+Checking and identifying unsecure Network protocols that show  username and password in clear text (_HTTP_) **port 80** 
+which shown during or when a User on Staff PC(_192.168.10.45_) is login to the Portal Server (_192.168.10.20_).
 <img width="1249" height="681" alt="6 SOC LAB HTTP plain text credentials I" src="https://github.com/user-attachments/assets/16f17ac5-0b94-44e1-b74b-a35d0cd1edff" />
 
 ⨳After Analyzing the packets captured from the Wireshark through the HTTP Protocol the User from the Staff PC(_192.168.10.45_) credentials was discover to be sent to the server (_192.168.10.20_)  through **_port 80_** in cleat text as displayed below,
