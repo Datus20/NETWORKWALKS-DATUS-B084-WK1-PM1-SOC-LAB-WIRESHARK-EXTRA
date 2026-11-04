@@ -106,7 +106,10 @@ the below is the topology
 ⨳VoIP Call ready for Play Stream,
 <img width="1364" height="780" alt="8 SOC LAB VOIP Call IV" src="https://github.com/user-attachments/assets/38c30e8e-64ac-44d7-8b51-5cd7999c9a83" />
 
-⨳The playback stream was Played thru RTP Player on Wireshark and audio conversation was he
+⨳The playback stream was Played thru **RTP Player** on Wireshark and audio conversation was heard. as below where scammer IP (_192.168.10.25_) and User IP phone (_192.168.10.45_).
+<img width="1359" height="781" alt="8 SOC LAB VOIP Call V" src="https://github.com/user-attachments/assets/150fd883-df28-44b3-9b2a-c6c331d0ebdd" />
+
+
 
 
 
