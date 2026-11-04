@@ -172,7 +172,22 @@ the below is the topology
 ⨳The playback stream was Played thru **RTP Player** on Wireshark and audio conversation was heard. as below where scammer IP (_192.168.10.25_) and User IP phone (_192.168.10.45_).
 <img width="1359" height="781" alt="8 SOC LAB VOIP Call V" src="https://github.com/user-attachments/assets/150fd883-df28-44b3-9b2a-c6c331d0ebdd" />
 
+---
 
+# 🔗 Tools & Resources
+
+- **Wireshark:** https://www.wireshark.org/download.html
+
+# 👤 Author
+
+**Datus Ekwabi**\
+
+LinkedIn: [www.linkedin.com/in/datus-ekwabi-43b622173
+---
+
+## 📌 Project Information
+
+**Program Name:** Cybersecurity at Networkwalks | **Week:** 01 | **Project:** SOC LAB Wireshark (EXTRA)| **Repository:** GitHub
 
 
 
