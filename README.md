@@ -1,3 +1,4 @@
+<img width="1251" height="673" alt="4 SOC LAB Follow TCP Stream I" src="https://github.com/user-attachments/assets/e82f2cec-cd27-4e88-a829-0a870873f9c8" />
 # NETWORKWALKS-DATUS-B084-WK1-PM1-SOC-LAB-WIRESHARK-EXTRA-
 <div align="center">
 #🦈SOC LAB Wireshark (EXTRA)🦈
@@ -43,3 +44,4 @@ The Packet analysis was done and the Attacker was identified with Ip **(_192.168
 
 # 👣 Following TCP Stream to Capture and find the  Hidden data
 The Lab Network topology was provides as per below diagram of the SOC LAB with Webserver (_IP 192.168.10.20_), SOC Analyst (_IP 192.168.10.10_), **Staff PC (_IP Unknown_)** , Network switch  and other host which all are connected to the Switch thru Wired (_Ethernet_)/ Wireless(_Wi-fi_).
+![Uploading 4.SOC LAB Follow TCP Stream I.png…]()
