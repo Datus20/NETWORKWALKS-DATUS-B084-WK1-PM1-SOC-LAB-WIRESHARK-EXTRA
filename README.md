@@ -69,14 +69,15 @@ The main objectives of this SOC Labs project are to:
 
 ## 🪪To check & identify the unsecure Network protocols (HTTP)🔑
 Checking and identifying unsecure Network protocols that show  username and password in clear text (_HTTP_) **port 80** 
-which shown during or when a User on Staff PC(_192.168.10.45_) is login to the Portal Server (_192.168.10.20_).
+which shown during or when a User on **Staff PC(_192.168.10.45_)** is login to the **Portal Server (_192.168.10.20_)**.
 <img width="1249" height="681" alt="6 SOC LAB HTTP plain text credentials I" src="https://github.com/user-attachments/assets/16f17ac5-0b94-44e1-b74b-a35d0cd1edff" />
 
-⨳After Analyzing the packets captured from the Wireshark through the HTTP Protocol the User from the Staff PC(_192.168.10.45_) credentials was discover to be sent to the server (_192.168.10.20_)  through **_port 80_** in cleat text as displayed below,
+⨳After Analyzing the packets captured from the Wireshark through the HTTP Protocol the User from the **Staff PC(_192.168.10.45_)** credentials was discover to be sent to the **Portal server (_192.168.10.20_)**  through **_port 80_** in cleat text as displayed below,
 <img width="1363" height="780" alt="6 SOC LAB HTTP plain text credentials II" src="https://github.com/user-attachments/assets/2356538c-18ec-4e12-bbfa-565c06cc12b0" />
 
 ## 🤾‍♂️🪝Catching the Brute Force Attacker
-⨳To identifying and catching the Attacker who is try to make a way to the server by try different combination of username and passwords by sending multiple login request trying to access stored resources on the server.
+⨳To identifying and catching the **Attacker(_IP Unknown_)** who is try to make a way to the **FTP server (_192.168.10.20_)** by try different combination of username and passwords by sending multiple login request trying to access stored resources on the server.
+
 
 
 
