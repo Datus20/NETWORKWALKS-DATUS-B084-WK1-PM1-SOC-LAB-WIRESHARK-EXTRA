@@ -33,6 +33,7 @@ The main objectives of this SOC Labs project are to:
 - To Catch the Brute Force Attacker.
 - To Catch the Call Scammer on VOIP in the Network.
 
+
 # 🔎Identify the attacker's IP
 
 ⨳The Lab Network topology was provides as per below diagram of the SOC LAB with Webserver (_IP 192.168.10.20_), SOC Analyst (_IP 192.168.10.10_), **Attacker (_IP Unknown_)**, Network switch  and other host which all are connected to the Switch thru Wired (_Ethernet_)/ Wireless(_Wi-fi_).
@@ -41,6 +42,8 @@ The main objectives of this SOC Labs project are to:
 
 ⨳The Packet analysis was done and the Attacker was identified with Ip **(_192.168.10.66_)** with port **52311** who was try to access service from the server (_192.168.10.20_) through different ports as indicated in packet analysis shown below,
 <img width="1366" height="784" alt="3 SOC LAB Identify Attacker II" src="https://github.com/user-attachments/assets/257f0649-79ab-44a4-9405-f827e3a2055d" />
+
+
 
 
 # 👣 Following TCP Stream to Capture and find the  Hidden data
@@ -56,8 +59,9 @@ The main objectives of this SOC Labs project are to:
 
 <img width="1355" height="779" alt="4 SOC LAB Follwo TCP Stream III" src="https://github.com/user-attachments/assets/1f52a08f-af3e-4d3b-9c94-bf2f9cd1836b" />
 
-## 📸 Capturing (Hidden Data on TCP Stream 
 
+
+## 📸 Capturing (Hidden Data on TCP Stream 
 ⨳(_Topology Diagram_) 
 <img width="1247" height="675" alt="5 SOC LAB Follow TCP Stream 2 I" src="https://github.com/user-attachments/assets/a8722d06-3029-4faf-bc5b-d9c40703f26c" />
 
@@ -67,6 +71,8 @@ The main objectives of this SOC Labs project are to:
 ⨳ Hidden Data
 <img width="1357" height="779" alt="5 SOC LAB Follow TCP Stream 2 III" src="https://github.com/user-attachments/assets/1c7c2b09-c171-4157-b9f0-6f4972d7db3f" />
 
+
+
 ## 🪪To check & identify the unsecure Network protocols (HTTP)🔑
 Checking and identifying unsecure Network protocols that show  username and password in clear text (_HTTP_) **port 80** 
 which shown during or when a User on **Staff PC(_192.168.10.45_)** is login to the **Portal Server (_192.168.10.20_)**.
@@ -74,6 +80,8 @@ which shown during or when a User on **Staff PC(_192.168.10.45_)** is login to t
 
 ⨳After Analyzing the packets captured from the Wireshark through the HTTP Protocol the User from the **Staff PC(_192.168.10.45_)** credentials was discover to be sent to the **Portal server (_192.168.10.20_)**  through **_port 80_** in cleat text as displayed below,
 <img width="1363" height="780" alt="6 SOC LAB HTTP plain text credentials II" src="https://github.com/user-attachments/assets/2356538c-18ec-4e12-bbfa-565c06cc12b0" />
+
+
 
 ## 🤾‍♂️🪝Catching the Brute Force Attacker
 ⨳To identifying and catching the **Attacker(_IP Unknown_)** who is try to make a way to the **FTP server (_192.168.10.20_)** **port 21** by try different combination of username and passwords by sending multiple login request trying to access stored resources on the server.
@@ -92,7 +100,9 @@ which shown during or when a User on **Staff PC(_192.168.10.45_)** is login to t
 <img width="1365" height="781" alt="7 SOC LAB Catch the Bruteforce Attacker V" src="https://github.com/user-attachments/assets/c8cff474-4886-4e7d-8750-a16edc93237d" />
 
 
-# 📞☎️😥Catching the Call Scammer on VOIP in the Network
+
+
+## 📞☎️😥Catching the Call Scammer on VOIP in the Network
 To investigate ,capture traffic the call and identifying the scammer who was on the call with user on the network who was using the VoIP (_Voice over IP_) phone **(_192.168.10.45_)** thru the Phone Server **(_192.168.10.20_)**.Also playing it back to hear voice conversation during the call
 the below is the topology
 <img width="1253" height="676" alt="8 SOC LAB VOIP Call I" src="https://github.com/user-attachments/assets/3aee6697-d259-4c47-a686-b8b144144b2b" />
