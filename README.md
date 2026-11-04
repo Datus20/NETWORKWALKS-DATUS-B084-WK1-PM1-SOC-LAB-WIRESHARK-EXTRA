@@ -105,8 +105,7 @@ which shown during or when a User on **Staff PC(_192.168.10.45_)** is login to t
 ⨳After Analyzing the packets captured from the Wireshark through the HTTP Protocol the User from the **Staff PC(_192.168.10.45_)** credentials was discover to be sent to the **Portal server (_192.168.10.20_)**  through **_port 80_** in cleat text as displayed below,
 <img width="1363" height="780" alt="6 SOC LAB HTTP plain text credentials II" src="https://github.com/user-attachments/assets/2356538c-18ec-4e12-bbfa-565c06cc12b0" />
 
-
-
+---
 
 
 # 🤾‍♂️🪝Catching the Brute Force Attacker
@@ -121,25 +120,25 @@ which shown during or when a User on **Staff PC(_192.168.10.45_)** is login to t
 
 
 
-
+---
 
 ⨳(_tcp.stream eq 6_)
 <img width="1364" height="725" alt="7 SOC LAB Catch the Bruteforce Attacker III" src="https://github.com/user-attachments/assets/2431e457-ebc3-4a1f-a106-6c69e85cc27f" />
 
 
 
-
+---
 
 ⨳After many guess or attempt the Attacker was successfully login on the FTP server with the suer name and password shown,
 <img width="1366" height="784" alt="7 SOC LAB Catch the Bruteforce Attacker IV" src="https://github.com/user-attachments/assets/6737b7b5-6523-4e17-b4c3-954538627da0" />
 
 
-
+---
 
 ⨳(_tcp.stream eq 13_)
 <img width="1365" height="781" alt="7 SOC LAB Catch the Bruteforce Attacker V" src="https://github.com/user-attachments/assets/c8cff474-4886-4e7d-8750-a16edc93237d" />
 
-
+---
 
 
 
@@ -150,25 +149,25 @@ the below is the topology
 
 
 
-
+---
 
 ⨳ After capturing the packets during the analysis **Session initiation Protocol (SIP)** packet was captured and the Scammer **IP (_192.168.10.52_)** was discovered and captured.
 <img width="1360" height="781" alt="8 SOC LAB VOIP Call II" src="https://github.com/user-attachments/assets/ea504ede-a247-4aff-a865-c099d63981ff" />
 
 
-
+---
 
 ⨳Then the establishment of **Real-time Transport Protocol (RTP)** between user and scammer stream was captured for playback.
 <img width="1358" height="774" alt="8 SOC LAB VOIP Call III" src="https://github.com/user-attachments/assets/11cbf9c7-0007-4088-8cef-75e1815ccce0" />
 
 
-
+---
 
 ⨳VoIP Call ready for Play Stream,
 <img width="1364" height="780" alt="8 SOC LAB VOIP Call IV" src="https://github.com/user-attachments/assets/38c30e8e-64ac-44d7-8b51-5cd7999c9a83" />
 
 
-
+---
 
 ⨳The playback stream was Played thru **RTP Player** on Wireshark and audio conversation was heard. as below where scammer IP (_192.168.10.25_) and User IP phone (_192.168.10.45_).
 <img width="1359" height="781" alt="8 SOC LAB VOIP Call V" src="https://github.com/user-attachments/assets/150fd883-df28-44b3-9b2a-c6c331d0ebdd" />
