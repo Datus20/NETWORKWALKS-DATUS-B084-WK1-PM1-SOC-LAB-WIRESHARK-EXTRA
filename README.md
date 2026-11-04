@@ -76,7 +76,45 @@ which shown during or when a User on **Staff PC(_192.168.10.45_)** is login to t
 <img width="1363" height="780" alt="6 SOC LAB HTTP plain text credentials II" src="https://github.com/user-attachments/assets/2356538c-18ec-4e12-bbfa-565c06cc12b0" />
 
 ## 🤾‍♂️🪝Catching the Brute Force Attacker
-⨳To identifying and catching the **Attacker(_IP Unknown_)** who is try to make a way to the **FTP server (_192.168.10.20_)** by try different combination of username and passwords by sending multiple login request trying to access stored resources on the server.
+⨳To identifying and catching the **Attacker(_IP Unknown_)** who is try to make a way to the **FTP server (_192.168.10.20_)** **port 21** by try different combination of username and passwords by sending multiple login request trying to access stored resources on the server.
+<img width="1248" height="685" alt="7 SOC LAB Catch the Bruteforce Attacker I" src="https://github.com/user-attachments/assets/089b9221-2d26-4435-ada1-74838b82088e" />
+
+⨳ After the analysis of the packet collected by Wireshark The Attacker's IP **(_192.168.10.66_)** was identified  because it was sending too many  FTP login request on within a short period of time on FTP server **(_192.168.10.20_)** thru **_port 21_** try to guess the  username and password  as per below screenshot,
+<img width="1361" height="779" alt="7 SOC LAB Catch the Bruteforce Attacker II" src="https://github.com/user-attachments/assets/91f40313-3fc1-4380-94e5-3d8b5b1b8dfb" />
+
+⨳(_tcp.stream eq 6_)
+<img width="1364" height="725" alt="7 SOC LAB Catch the Bruteforce Attacker III" src="https://github.com/user-attachments/assets/2431e457-ebc3-4a1f-a106-6c69e85cc27f" />
+
+⨳After many guess or attempt the Attacker was successfully login on the FTP server with the suer name and password shown,
+<img width="1366" height="784" alt="7 SOC LAB Catch the Bruteforce Attacker IV" src="https://github.com/user-attachments/assets/6737b7b5-6523-4e17-b4c3-954538627da0" />
+
+⨳(_tcp.stream eq 13_)
+<img width="1365" height="781" alt="7 SOC LAB Catch the Bruteforce Attacker V" src="https://github.com/user-attachments/assets/c8cff474-4886-4e7d-8750-a16edc93237d" />
+
+
+# 📞☎️😥Catching the Call Scammer on VOIP in the Network
+To investigate ,capture traffic the call and identifying the scammer who was on the call with user on the network who was using the VoIP (_Voice over IP_) phone **(_192.168.10.45_)** thru the Phone Server **(_192.168.10.20_)**.Also playing it back to hear voice conversation during the call
+the below is the topology
+<img width="1253" height="676" alt="8 SOC LAB VOIP Call I" src="https://github.com/user-attachments/assets/3aee6697-d259-4c47-a686-b8b144144b2b" />
+
+⨳ After capturing the packets during the analysis **Session initiation Protocol (SIP)** packet was captured and the Scammer **IP (_192.168.10.52_)** was discovered and captured.
+<img width="1360" height="781" alt="8 SOC LAB VOIP Call II" src="https://github.com/user-attachments/assets/ea504ede-a247-4aff-a865-c099d63981ff" />
+
+⨳Then the establishment of **Real-time Transport Protocol (RTP)** between user and scammer stream was captured for playback.
+<img width="1358" height="774" alt="8 SOC LAB VOIP Call III" src="https://github.com/user-attachments/assets/11cbf9c7-0007-4088-8cef-75e1815ccce0" />
+
+⨳VoIP Call ready for Play Stream,
+<img width="1364" height="780" alt="8 SOC LAB VOIP Call IV" src="https://github.com/user-attachments/assets/38c30e8e-64ac-44d7-8b51-5cd7999c9a83" />
+
+⨳The playback stream was Played thru RTP Player on Wireshark and audio conversation was he
+
+
+
+
+
+
+
+
 
 
 
